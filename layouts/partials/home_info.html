@@ -1,0 +1,14 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <img class="profile_img" src="https://media.licdn.com/dms/image/v2/D4E03AQHJ30JmLA42Ow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725366733082?e=1732147200&v=beta&t=iWRtYS6mIaNULDOVrLsmU-Gje3Is2WbYSI7uXxbkrdU"/>
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}
