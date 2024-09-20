@@ -1,0 +1,25 @@
+/* Changes svg of navbar menu */
+#menu li a
+{
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+}
+
+#menu li a svg
+{
+   top: 30px;
+   max-height: 35px;
+}
+
+
+/* Changes svg of social icons */
+.social-icons a
+{
+   padding-right: 0;
+}
+.social-icons a svg
+{
+   height: 36px;
+   width: 36px;
+}

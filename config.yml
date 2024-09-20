@@ -1,7 +1,7 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://github.com/Holsp/hugo-blog.git"
-title: Jan Kirchner's Blog
+title: Jan Kirchner
 copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 paginate: 5
 theme: [PaperMod]
@@ -13,33 +13,20 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts"]
+mainsections: ["cz"]
+defaultContentLanguage: cz
+defaultContentLanguageInSubdir: true
 
 minify:
   disableXML: true
   # minifyOutput: true
 
 languages:
-  en:
-    languageName: "English"
-    weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
-    menu:
-      main:
-        - name: Main page
-          url: http://kirchnerjan.cz/
-          weight: 5
-        - name: LinkedIn
-          url: https://www.linkedin.com/in/kirchner-jan/
-          weight: 10
 
   cz:
     languageName: "Czech"
-    weight: 2
-    title: PaperModL2
+    weight: 1
+    contentDir: "content/cz"
     taxonomies:
       category: CZcategories
       tag: tags
@@ -49,30 +36,34 @@ languages:
         - name: Hlavní stránka
           url: http://kirchnerjan.cz/
           weight: 5
-        - name: LinkedIn
-          url: https://www.linkedin.com/in/kirchner-jan/
-          weight: 10
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       languageAltTitle: Czech
-      profileMode:
-        enabled: true
-        title: PaperMod
-        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
-        imageTitle: ProfileMode image
-        # imageWidth: 120
-        # imageHeight: 120
-        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-        buttons:
-          - name: Blog
-            url: posts
-          - name: Profile Mode
-            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
       homeInfoParams:
-        Title: Hello
-        Content: Bruh
-            
+        Title: "Můj blog"
+        Content: >
+          👋 Ahoooj
+ 
+  en:
+    languageName: "English"
+    weight: 2
+    contentDir: "content/en"
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Main page
+          url: http://kirchnerjan.cz/
+          weight: 5
+      #  - name: LinkedIn
+      #    url: https://www.linkedin.com/in/kirchner-jan/
+      #    params:
+      #      linkSvg: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+      #    weight: 10
+           
 outputs:
   home:
     - HTML
@@ -124,18 +115,12 @@ params:
       - Hope you enjoy!
 
   socialIcons:
-    - name: github
-      title: View Source on Github
-      url: "https://github.com/adityatelange/hugo-PaperMod"
-    - name: Discord
+    - name: Instagram
+      title: View Source on Instagram
+      url: "https://www.instagram.com/ursohonza/"
+    - name: LinkedIn
       title: Join discord community
-      url: "https://discord.gg/ahpmTvhVmp"
-    - name: X
-      title: Share PaperMod on X/Twitter
-      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
-    - name: KoFi
-      title: Buy me a Ko-Fi :)
-      url: "https://ko-fi.com/adityatelange"
+      url: "https://www.linkedin.com/in/kirchner-jan/"
 
   editPost:
     URL: "https://github.com/Holsp/hugo-blog"
