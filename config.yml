@@ -79,6 +79,7 @@ params:
   defaultTheme: auto
   # disableThemeToggle: true
   ShowShareButtons: true
+  ShareButtons: ["linkedin", "x","reddit","facebook","instagram","telegram"]
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
@@ -88,7 +89,7 @@ params:
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
-  ShowToc: true
+  ShowToc: false
   # comments: false
   images: ["images/papermod-cover.png"]
 
