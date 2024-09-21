@@ -14,7 +14,7 @@
 {{- with $ShareButtons }}{{ $custom = true }}{{ end }}
 
 <hr/>
-<span>share this post on your favorite platform!</span>
+<span>{{- i18n "share_post" | default "share this post on your favorite platform!" }}</span>
 <ul class="share-buttons">
     {{- if (or (cond ($custom) (in $ShareButtons "x") (true)) (cond ($custom) (in $ShareButtons "twitter") (true))) }}
     <li>

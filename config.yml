@@ -14,7 +14,7 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["cz"]
-defaultContentLanguage: cz
+defaultContentLanguage: cs
 defaultContentLanguageInSubdir: true
 
 minify:
@@ -23,7 +23,7 @@ minify:
 
 languages:
 
-  cz:
+  cs:
     languageName: "Czech"
     weight: 1
     contentDir: "content/cz"

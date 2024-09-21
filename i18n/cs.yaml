@@ -31,3 +31,9 @@
 
 - id: code_copied
   translation: "zkopírováno!"
+
+- id: suggest_changes
+  translation: "navrhnout změny"
+
+- id: share_post
+  translation: "sdílejte tento příspěvek na vaší oblíbené platformě!"
