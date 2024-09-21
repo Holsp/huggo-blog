@@ -71,13 +71,35 @@
     <h2 class="entry-hint-parent">
       <!-- Adding folder if directory, book if article -->
       {{ if .IsSection }}
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
         <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2" />
       </svg>
       {{ else }}
-      <svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;"><path d="M533.333,233.333l100,0l0,133.334l-100,-0l0,-133.334Zm-233.333,266.667l366.667,0m-366.667,-133.333l133.333,-0m-133.333,-133.334l133.333,0m-233.333,383.334c0,46.023 -37.31,83.333 -83.333,83.333c-46.024,0 -83.334,-37.31 -83.334,-83.333l0,-383.334l167.498,0m-0.831,383.334l0,-516.667l566.667,0l-0,516.667c-0,46.023 -37.31,83.333 -83.334,83.333l-566.666,0" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:66.67px;"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <g id="article">
+        <g>
+            <path d="M20.5,22L3.5,22C1.6,22 0,20.4 0,18.5L0,8.509C-0,7.844 0.264,7.206 0.735,6.735C1.206,6.264 1.844,6 2.509,6C3.756,6 5,6 5,6L5,4.48C5,3.11 6.111,2 7.48,2C10.955,2 17.264,2 20.999,2C22.656,2 24,3.344 24,5.001C24,9.759 24,18.5 24,18.5C24,20.4 22.4,22 20.5,22ZM6.7,20L20.5,20C21.3,20 22,19.3 22,18.5L22,5.001C22,4.735 21.895,4.481 21.707,4.293C21.519,4.105 21.265,4 20.999,4C18.277,4 10.761,4 8.019,4C7.456,4 7,4.456 7,5.019C7,8.318 7,18.5 7,18.5C7,19 6.9,19.5 6.7,20ZM2,8L2,18.5C2,19.3 2.7,20 3.5,20C4.3,20 5,19.3 5,18.5L5,8L2,8Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g>
+            <path d="M19.503,6C19.635,6 19.761,6.052 19.855,6.145C19.948,6.239 20,6.365 20,6.497C20,7.626 20,10.374 20,11.503C20,11.635 19.948,11.761 19.855,11.855C19.761,11.948 19.635,12 19.503,12C18.546,12 16.454,12 15.497,12C15.365,12 15.239,11.948 15.145,11.855C15.052,11.761 15,11.635 15,11.503C15,10.374 15,7.626 15,6.497C15,6.365 15.052,6.239 15.145,6.145C15.239,6.052 15.365,6 15.497,6C16.454,6 18.546,6 19.503,6ZM18.616,7.661L16.384,7.661L16.384,10.339L18.616,10.339L18.616,7.661Z"/>
+        </g>
+        <g>
+            <rect x="9" y="6" width="4" height="2"/>
+        </g>
+        <g>
+            <rect x="9" y="10" width="4" height="2"/>
+        </g>
+        <g>
+            <rect x="9" y="14" width="11" height="2"/>
+        </g>
+    </g>
+      </svg>
+      
       {{- end -}}
+
+
       {{- .Title }}
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
