@@ -28,6 +28,11 @@
    height: 36px;
    width: 36px;
 }
+.social-icons a:hover
+{
+   transition: 100ms;
+   transform: translateY(-3px);
+}
 
 
 /* Change list svgs */
@@ -82,4 +87,11 @@
 .share-buttons li:hover {
    transition: 100ms;
    transform: translateY(-3px);
+ }
+
+ /* Greater text movement and responsiveness */
+ .header a:hover, #theme-toggle:hover
+ {
+   transition: 100ms;
+   transform: translateY(-2px);
  }
